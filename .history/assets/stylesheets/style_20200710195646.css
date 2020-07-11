@@ -1,0 +1,63 @@
+/** Basic Styling **/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: grey;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+ display: flex;
+}
+
+body, 
+input, 
+button {
+ font-size: 62.5%;
+ font-family: 'Helvetica';
+}
+
+button {
+ cursor: pointer;
+}
+
+/** NavBar Styling **/
+#navbar {
+  width: 30vw;
+}
+/** Heading Stying **/
+
+#main-heading {
+  padding: 3vh 1vw;
+  width: 30vw;
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+  border: 2px solid black;
+}
+
+#main-heading h1 {
+  font-size: 3rem;
+}
+
+/** Navigation Links Styling 
+.nav-container {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column; 
+}
+
+.nav-container .nav-link {
+  display: inline-block;
+  width: 30vw;
+  height: 10vh;
+  padding: 3vh 1vw;
+  border: 2px solid black;
+  font-size: 1.5rem;
+}
+

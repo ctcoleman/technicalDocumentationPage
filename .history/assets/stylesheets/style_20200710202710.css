@@ -1,0 +1,118 @@
+/** Basic Styling **/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: grey;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+ display: flex;
+}
+
+body, 
+input, 
+button {
+ font-size: 62.5%;
+ font-family: 'Helvetica';
+}
+
+button {
+ cursor: pointer;
+}
+
+/** NavBar Styling **/
+#navbar {
+  width: 30vw;
+  position: fixed;
+  left: 0;
+}
+
+/** Heading Stying **/
+
+#main-heading {
+  padding: 3vh 1vw;
+  width: 30vw;
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+  border: 2px solid black;
+}
+
+#main-heading h1 {
+  font-size: 2.5rem;
+}
+
+/** Navigation Links Styling **/
+
+.nav-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
+}
+
+.nav-container .nav-link {
+  display: inline-block;
+  width: 30vw;
+  height: 3vh;
+  padding: 3vh 1vw;
+  border: 2px solid black;
+  font-size: 1.25rem;
+}
+
+/** Main Content Styling **/
+
+#main-doc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30vw;
+}
+
+.main-section {
+  padding: 5vh 5vw;
+  width: 65vw;
+  margin-left: 5vw;
+  border-bottom: 1px dashed black;
+}
+
+.main-section .topic-header {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom: 3vh;
+}
+
+.main-section article p,
+.main-section article li,
+.main-section article code {
+  font-size: 1.25rem;
+  margin: 2vh 0;
+}
+/** Footer Styling **/
+
+
+/** Media Queries **/
+
+/** @ 750px font size decrease **/
+@media only screen and (max-width: 750px) {
+  #main-heading h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.main-section article p,
+.main-section article li,
+.main-section article code {
+  font-size: 1rem;
+}
+.main-section .topic-header {
+  font-size: 1.25rem;
+}
+
+.nav-container .nav-link {
+  font-size: 1rem;
+}
